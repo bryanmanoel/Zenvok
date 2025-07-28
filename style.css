@@ -1,0 +1,121 @@
+:root {
+  --bg-dark: #111;
+  --card-dark: #1a1a1a;
+  --primary-color: #4fc3f7;
+  --text-light: #f0f0f0;
+  --highlight: #4fc3f7;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+}
+
+header {
+  padding: 30px;
+  text-align: center;
+  background-color: var(--card-dark);
+  border-bottom: 3px solid var(--primary-color);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+nav {
+  display: none;
+}
+
+.section {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px;
+  background-color: var(--card-dark);
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #000;
+}
+
+.social {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.social a {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 10px 15px;
+  background-color: var(--highlight);
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.social a:hover {
+  background-color: #29b6f6;
+}
+
+footer {
+  margin-top: 50px;
+  text-align: center;
+  padding: 20px;
+  background-color: #000;
+  color: #aaa;
+}
+
+.product-list {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.product-card {
+  background-color: #222;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 280px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-decoration: none;
+  color: white;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px var(--highlight);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.voltar {
+  display: block;
+  margin-top: 15px;
+  text-align: center;
+  color: var(--highlight);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.search-box {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.search-box input {
+  padding: 10px;
+  width: 250px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+}
